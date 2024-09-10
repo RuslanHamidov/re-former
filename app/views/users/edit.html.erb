@@ -1,0 +1,14 @@
+<h1>Edit endpoint</h1>
+
+<%= form_with model: @user, local: true do |form| %>
+  <%= form.label :username %>
+  <%= form.text_field :username %><br><br>
+
+  <%= form.label :email %>
+  <%= form.email_field :email, placeholder: "example@example.com" %><br><br>
+
+  <%= form.label :password %>
+  <%= form.password_field :password, placeholder: "Enter your password"%><br><br>
+
+  <%= form.submit "Edit User" %>
+<% end %>
